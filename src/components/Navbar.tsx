@@ -3,6 +3,7 @@ import React, { useState } from 'react'
 // import { IoIosContact } from "react-icons/io";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { ImCross } from "react-icons/im";
+import { HiOutlineLogout } from "react-icons/hi";
 
 const Navbar = () => {
     const [toggleActive, setToggleInactive] = useState(false);
@@ -56,12 +57,12 @@ const Navbar = () => {
             </nav> */}
 
 
-            <nav className="flex items-center justify-between mx-auto p-2 lg:px-4">
+            <nav className="static flex items-center justify-between p-2 lg:px-4">
                 <a href="/">
                     <img src="TP-logo.webp" alt="logo" className='' />
                 </a>
 
-                <ul className={toggleActive == true ? "fixed flex flex-col justify-center items-center gap-2 top-16 bg-black text-white mx-auto py-2 w-[95%] sm:w-[97%] font-extrabold lg:hidden" : "hidden"}>
+                <ul className={toggleActive == true ? "fixed flex flex-col justify-center items-center gap-2 top-14 bg-black text-white mx-auto py-2 w-[95%] sm:w-[97%] md:w-[98%] font-extrabold z-50 lg:hidden" : "hidden"}>
                     <li className="cursor-pointer hover:text-blue-600">
                         Car Tyers
                     </li>
@@ -112,9 +113,12 @@ const Navbar = () => {
                     <li className="cursor-pointer hover:text-blue-600">
                         More
                     </li>
-                    <li className='cursor-pointer hover:text-blue-600'>
-                        Login
-                    </li>
+                    <div className="cursor-pointer ml-4 flex items-center font-extrabold gap-1 hover:text-blue-600">
+                        <HiOutlineLogout />
+                        <span>
+                            Login
+                        </span>
+                    </div>
                 </ul>
 
                 <div className="m-1 lg:hidden cursor-pointer">
