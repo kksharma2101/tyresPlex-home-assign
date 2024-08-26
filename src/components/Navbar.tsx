@@ -17,46 +17,6 @@ const Navbar = () => {
 
     return (
         <div className=''>
-            {/* <nav className="navbar navbar-expand-lg bg-body-tertiary">
-                <div className="container-fluid">
-                    <a className="navbar-brand" href="/">
-                        <img src="TP-logo.webp" alt="logo" />
-                    </a>
-                    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span className="navbar-toggler-icon" />
-                    </button>
-                    <div className="collapse navbar-collapse " id="navbarSupportedContent">
-                        <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li className="nav-item">
-                                <a className="nav-link active" aria-current="page" href="#">Car <br /> Tyres</a>
-                            </li>
-                            <li className="nav-item">
-                                <a className="nav-link text-black" href="#">Bike <br /> Tyers</a>
-                            </li>
-                            <li className="nav-item">
-                                <a className="nav-link text-black" href="#">Tyres <br /> Pressure</a>
-                            </li>
-                            <li className="nav-item">
-                                <a className="nav-link text-black" href="#">Commercial <br /> Tyres</a>
-                            </li>
-                            <li className="nav-item">
-                                <a className="nav-link text-black" href="#">Accessories</a>
-                            </li>
-                            <li className="nav-item">
-                                <a className="nav-link text-black" href="#">More</a>
-                            </li>
-                        </ul>
-                        <a href="#" className='d-flex text-black gap-1'>
-                            <span>
-                                <IoIosContact />
-                            </span>
-                            <p>Login</p>
-                        </a>
-                    </div>
-                </div>
-            </nav> */}
-
-
             <nav className="static flex items-center justify-between p-2 lg:px-4">
                 <a href="/">
                     <img src="TP-logo.webp" alt="logo" className='' />
@@ -86,7 +46,7 @@ const Navbar = () => {
                     </li>
                 </ul>
 
-                <ul className="hidden font-extrabold lg:flex justify-around gap-4">
+                <ul className="hidden font-bold lg:flex justify-around gap-4">
                     <li className="cursor-pointer hover:text-blue-600">
                         Car
                         <br />
@@ -113,7 +73,7 @@ const Navbar = () => {
                     <li className="cursor-pointer hover:text-blue-600">
                         More
                     </li>
-                    <div className="cursor-pointer ml-4 flex items-center font-extrabold gap-1 hover:text-blue-600">
+                    <div className="cursor-pointer ml-4 flex items-center font-bold gap-1 hover:text-blue-600">
                         <HiOutlineLogout />
                         <span>
                             Login

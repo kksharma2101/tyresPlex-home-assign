@@ -3,6 +3,7 @@
 import React, { useState } from 'react'
 import { FaAngleDown, FaAngleUp } from "react-icons/fa6";
 import PopularTyresBrand from './PopularTyresBrand';
+import StarsReview from './StarsReview';
 
 const Homepage = () => {
     const [findTyre, setFindTyre] = useState(false)
@@ -27,6 +28,8 @@ const Homepage = () => {
                             findTyre == true ? <FaAngleUp className="size-6 xl:size-10" onClick={handleDropDown} /> : <FaAngleDown className="size-6 xl:size-10" onClick={handleDropDown} />
                         }
                     </div>
+
+                    {/* toggle tyre brans functionality */}
                     <div className={findTyre == true ? "w-full flex items-start flex-col justify-center gap-2 bg-white px-2 py-2" : "hidden"}>
                         <div className="flex items-center justify-start gap-2 w-full">
                             <button className="p-2 font-normal border rounded-md bg-black text-white">By Vehicle</button>
@@ -64,6 +67,7 @@ const Homepage = () => {
                         <button className="w-full bg-red-600 rounded-lg text-white mx-auto py-2">Search</button>
                     </div>
                 </div>
+                <StarsReview />
             </div>
 
             {/* import popular tyre brand component */}
