@@ -4,6 +4,7 @@ import React, { useState } from 'react'
 import { GiHamburgerMenu } from "react-icons/gi";
 import { ImCross } from "react-icons/im";
 import { HiOutlineLogout } from "react-icons/hi";
+import Link from 'next/link';
 
 const Navbar = () => {
     const [toggleActive, setToggleInactive] = useState(false);
@@ -47,6 +48,9 @@ const Navbar = () => {
                 </ul>
 
                 <ul className="hidden font-bold lg:flex justify-around gap-4">
+                    <li>
+                        <Link href={'tyre-dealers'} className="cursor-pointe no-underline">Dealers page</Link>
+                    </li>
                     <li className="cursor-pointer hover:text-blue-600">
                         Car
                         <br />

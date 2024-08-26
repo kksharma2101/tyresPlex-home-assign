@@ -2,8 +2,7 @@
 
 import React, { useState } from 'react'
 import { FaAngleDown, FaAngleUp } from "react-icons/fa6";
-import PopularTyresBrand from './PopularTyresBrand';
-import StarsReview from './StarsReview';
+import PopularTyresBrand from './PopularTyresBrandCard';
 
 const Homepage = () => {
     const [findTyre, setFindTyre] = useState(false)
@@ -67,11 +66,10 @@ const Homepage = () => {
                         <button className="w-full bg-red-600 rounded-lg text-white mx-auto py-2">Search</button>
                     </div>
                 </div>
-                <StarsReview />
             </div>
 
             {/* import popular tyre brand component */}
-            <PopularTyresBrand />
+            <PopularTyresBrand headingtext='Popular Tyre Brands' className="flex items-center justify-center gap-1 mt-6 text-xs md:text-sm" />
         </>
     )
 }

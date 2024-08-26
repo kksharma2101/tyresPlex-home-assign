@@ -3,7 +3,7 @@ import { FaFacebookF, FaInstagram } from "react-icons/fa";
 
 const Footer = () => {
     return (
-        <div className='bg-white shadow-inner mt-2 border p-2 mx-2'>
+        <div className='bg-white shadow-inner mt-3 border p-2 mx-2'>
             <footer className='mx-auto w-full '>
                 <div className='flex items-center justify-between'>
                     <img src="TP-logo.webp" alt="" width={70} />

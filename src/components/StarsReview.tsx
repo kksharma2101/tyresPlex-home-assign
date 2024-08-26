@@ -18,7 +18,7 @@ const StarsReview = () => {
     return (
         <div className='flex items-baseline justify-start gap-2 w-full pt-3'>
             {rating}
-            <p className='underline'>234 Review</p>
+            <p className='underline cursor-pointer'>234 Review</p>
         </div>
     )
 }

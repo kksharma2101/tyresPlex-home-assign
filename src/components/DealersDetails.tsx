@@ -7,12 +7,12 @@ import Cards from './Cards';
 
 export const DealersDetails = () => {
     return (
-        <div className='mx-3'>
-            <div className="p-2 lg:flex justify-between">
-                {/* dealers informations */}
+        <div className='m-2 p-2 lg:m-4 lg:p-3 shadow-inner border'>
+            {/* dealers informations */}
+            <div className=" lg:flex justify-between">
                 <div className="">
                     {/* dealer name */}
-                    <div className="flex items-center justify-between">
+                    <div className="flex items-baseline justify-between">
                         <h2 className="uppercase font-bold">shree hemkunt tyres and <br /> services</h2>
                         <span className='text-green-400 flex items-center'>
                             <IoIosCheckmark className='text-white rounded-md mx-1 bg-green-500' />
@@ -48,7 +48,6 @@ export const DealersDetails = () => {
             {/* review cards */}
             <p className="font-bold my-3">3201 Google Review</p>
             <Cards />
-            {/* <div className=""></div> */}
         </div>
     )
 }
