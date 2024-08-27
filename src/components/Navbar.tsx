@@ -5,6 +5,7 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { ImCross } from "react-icons/im";
 import { HiOutlineLogout } from "react-icons/hi";
 import Link from 'next/link';
+import Image from 'next/image';
 
 const Navbar = () => {
     const [toggleActive, setToggleInactive] = useState(false);
@@ -21,7 +22,7 @@ const Navbar = () => {
             {/* Navbar */}
             <nav className="w-full flex items-center justify-between border-b-2 border-2 py-3 lg:px-4 bg-white">
                 <a href="/">
-                    <img src="TP-logo.webp" alt="logo" className='' />
+                    <Image src="TP-logo.webp" alt="logo" className='' />
                 </a>
 
                 <ul className={toggleActive == true ? "fixed flex flex-col justify-center items-center gap-2 top-14 bg-black text-white mx-auto py-2 w-[95%] sm:w-[97%] md:w-[98%] font-extrabold z-50 lg:hidden" : "hidden"}>

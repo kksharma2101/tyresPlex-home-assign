@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import React from 'react'
 import { FaFacebookF, FaInstagram } from "react-icons/fa";
 
@@ -6,7 +7,7 @@ const Footer = () => {
         <div className='bg-white shadow-inner mt-3 border p-2 mx-2'>
             <footer className='mx-auto w-full '>
                 <div className='flex items-center justify-between'>
-                    <img src="TP-logo.webp" alt="" width={70} />
+                    <Image src="TP-logo.webp" alt="" width={70} />
                     <div className="flex gap-3">
                         <FaFacebookF className='cursor-pointer hover:text-blue-600' />
                         <FaInstagram className='cursor-pointer hover:text-blue-600' />

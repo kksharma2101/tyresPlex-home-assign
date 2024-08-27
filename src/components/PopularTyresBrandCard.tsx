@@ -1,4 +1,5 @@
 'use client'
+import Image from 'next/image'
 import Link from 'next/link'
 import React, { useState } from 'react'
 
@@ -42,16 +43,18 @@ const PopularTyresBrand = (props: propsType) => {
             <div className="bg-white shadow-inner mt-3 border p-2">
                 <span className="font-bold text-black text-xl">{props.headingtext}</span>
 
+                {/* card */}
                 <div className="flex items-center flex-wrap justify-center gap-3 my-3 px-3">
                     {
                         companiesData.map((item) => (
-                            <div className="cursor-pointer h-28 flex flex-col justify-center items-center shadow-inner p-4 border w-40 rounded-md gap-3">
-                                <img src={item.img} alt="JK Tyre" width={60} />
+                            <div className="cursor-pointer h-28 flex flex-col justify-center items-center shadow-inner p-4 border w-40 rounded-md gap-3" key={item.id}>
+                                <Image src={item.img} alt="JK Tyre" width={60} />
                                 <span className='text-xs opacity-40'>{item.name}</span>
                             </div>
                         ))
                     }
                 </div>
+
                 {/* Brand links */}
                 <div className={props.className}>
                     <Link href="#" className='no-underline hover:text-blue-500'>Car Tyres</Link>|

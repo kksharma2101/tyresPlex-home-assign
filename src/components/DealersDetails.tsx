@@ -3,6 +3,7 @@ import { IoIosCheckmark } from "react-icons/io";
 import StarsReview from './StarsReview';
 import { CiLocationOn, CiClock2 } from "react-icons/ci";
 import Cards from './Cards';
+import Image from 'next/image';
 
 
 export const DealersDetails = () => {
@@ -42,7 +43,7 @@ export const DealersDetails = () => {
 
                     {/* shop images */}
                     <div className='flex justify-center flex-col pt-6 lg:px-5'>
-                        <img src="shop-image.jpg" alt="shop" className='rounded-md' />
+                        <Image src="shop-image.jpg" alt="shop" className='rounded-md' />
                     </div>
                 </div>
 
