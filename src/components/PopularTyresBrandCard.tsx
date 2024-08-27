@@ -1,4 +1,5 @@
 'use client'
+import Link from 'next/link'
 import React, { useState } from 'react'
 
 const companiesData = [
@@ -51,12 +52,12 @@ const PopularTyresBrand = (props: propsType) => {
                         ))
                     }
                 </div>
-
+                {/* Brand links */}
                 <div className={props.className}>
-                    <a href="#" className='no-underline'>Car Tyres</a>|
-                    <a href="#" className='no-underline'>Bike Tyres</a>|
-                    <a href="#" className='no-underline'>Scooter Tyres</a>|
-                    <a href="#" className='no-underline'>Commercial Tyres</a>
+                    <Link href="#" className='no-underline hover:text-blue-500'>Car Tyres</Link>|
+                    <Link href="#" className='no-underline hover:text-blue-500'>Bike Tyres</Link>|
+                    <Link href="#" className='no-underline hover:text-blue-500'>Scooter Tyres</Link>|
+                    <Link href="#" className='no-underline hover:text-blue-500'>Commercial Tyres</Link>
                 </div>
             </div>
         </div>

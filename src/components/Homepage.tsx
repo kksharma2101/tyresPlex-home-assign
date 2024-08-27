@@ -15,10 +15,15 @@ const Homepage = () => {
     }
 
     return (
-        <>
+        <div className='mt-16 lg:mt-20'>
             {/* find tyre by the categories */}
             <div className='px-2 w-full'>
+                {/* main image banner */}
                 <img src="hm-banner-new.webp" alt="Banner" className=' h-full w-full lg:h-96' />
+
+                <div className='absolute flex items-center justify-start top-[20%] sm:top-[25%] left-[10%] bg-white w-fit p-2 rounded-lg md:hidden'>
+                    <img src="TP-logo.webp" alt="Logo" width={90} />
+                </div>
 
                 <div className="absolute -top-[100%] w-[42%] h-56 lg:h-80 md:top-16 md:left-10 lg:top-24 lg:left-16">
                     <div className="bg-white flex items-center justify-between px-2 w-full rounded-t-md">
@@ -70,7 +75,7 @@ const Homepage = () => {
 
             {/* import popular tyre brand component */}
             <PopularTyresBrand headingtext='Popular Tyre Brands' className="flex items-center justify-center gap-1 mt-6 text-xs md:text-sm" />
-        </>
+        </div>
     )
 }
 

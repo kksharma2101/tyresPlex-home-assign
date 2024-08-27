@@ -1,5 +1,5 @@
 'use client'
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 // import { IoIosContact } from "react-icons/io";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { ImCross } from "react-icons/im";
@@ -17,8 +17,9 @@ const Navbar = () => {
     }
 
     return (
-        <div className=''>
-            <nav className="static flex items-center justify-between p-2 lg:px-4">
+        <div className="fixed z-50 w-full">
+            {/* Navbar */}
+            <nav className="w-full flex items-center justify-between border-b-2 border-2 py-3 lg:px-4 bg-white">
                 <a href="/">
                     <img src="TP-logo.webp" alt="logo" className='' />
                 </a>
